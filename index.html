@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity4</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d; /* dark background */
+        }
+
+        h2 {
+            color: #ff1a1a; /* red */
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            border: 2px solid #ff1a1a;
+            background-color: #1a1a1a; /* dark gray */
+        }
+
+        td {
+            border: 1px solid #ff1a1a;
+            color: white;
+        }
+
+        label {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 5px;
+            border: 1px solid #ff1a1a;
+            background-color: #0d0d0d;
+            color: white;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #ff4d4d;
+        }
+
+        button {
+            background-color: #ff1a1a;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+            border: 1px solid #ff1a1a;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>User Information Form</h2>
+
+    <form action="" method="post">
+        <table cellpadding="8">
+
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="Firstname" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lastname" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" id="hobby1" name="hobby[]" value="reading">
+                    <label for="hobby1">Reading</label><br>
+
+                    <input type="checkbox" id="hobby2" name="hobby[]" value="traveling">
+                    <label for="hobby2">Traveling</label><br>
+
+                    <input type="checkbox" id="hobby3" name="hobby[]" value="gaming">
+                    <label for="hobby3">Gaming</label><br>
+
+                    <input type="checkbox" id="hobby4" name="hobby[]" value="cooking">
+                    <label for="hobby4">Cooking</label><br>
+
+                    <input type="checkbox" id="hobby5" name="hobby[]" value="sports">
+                    <label for="hobby5">Sports</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="year-level">Year Level:</label></td>
+                <td>
+                    <select id="year-level" name="year_level">
+                        <option value="1st-year">1st Year</option>
+                        <option value="2nd-year">2nd Year</option>
+                        <option value="3rd-year">3rd Year</option>
+                        <option value="4th-year">4th Year</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
